@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 4 | Belajar CSS Grid Box</title>
+    <style>
+        .tempat_grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .item_grid {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tampilan :</h1>
+    <div class="tempat_grid">
+        <div class="item_grid">1</div>
+        <div class="item_grid">2</div>
+        <div class="item_grid">3</div>
+        <div class="item_grid">4</div>
+        <div class="item_grid">5</div>
+        <div class="item_grid">6</div>
+        <div class="item_grid">7</div>
+        <div class="item_grid">8</div>
+        <div class="item_grid">9</div>
+        <div>
+            <p>Skenario 1 : Penggunaan grid ditujukan untuk menentukan grid secara fleksibel </p>
+            <p>Skenario 2 : Berikut adalah contoh sederhana penerapan peletakan grid denga 3 kolm yang disusun secara inline </p>
+            <p>Skenario 3 : <br> > Grid gap digunakan saat mengatur jarak pada setiap item pada style 'tempat_grid'.<br> > Gap column digunakan saat mengatur jarak pada column <br> > Gap row digunakan saat mengatur jarak antar row.</p>
+            <p>Skenario 4 : Penggunaan grid-gap ditujukan untuk mengatur column gap dan row gap secara bersamaan.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

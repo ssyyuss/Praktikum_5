@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 6 | Belajar Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196F3;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+        }
+
+        .item1 {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            grid-column: 1/4;
+            /* grid-row: 1/4; | Dinonaktifkan untuk skenario 2 */
+        }
+
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div>
+            <p>Skenario 1 : grid-row adalah penentu letak baris elemen.</p>
+            <p>Skenario 2 : grid-column adalah penentu letak horizontal elemen.</p>
+        </div>
+    </div>
+</body>
+</html>

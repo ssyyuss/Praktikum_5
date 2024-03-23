@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>No 2 | Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            /* menjadi flexibel dengan mengatur properti display dengan nilai flex */
+            display: flex;
+            background-color: #4B3F72 (355, 289, 180); 
+            /* flex-direction: column-reverse; (Dinonaktifkan untuk skenario no 4) */ 
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .wadah_flex > div {
+            background-color: #417B5A;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <p>Kesimpulan skenario 1 : Flexbox digunakan untuk mengatur style wadah_flex beserta elemen yang ada didalamnya untuk menempel sejajar disebelah kanan </p>
+        <p>Kesimpulan skenario 2 : Dengan menggunakan selector untuk anak dari style wadah_flex, kita dapat mengatur pada style yang dipilih </p>
+        <p>Kesimpulan skenario 3 : Fungsi dari flex-direction adalah untuk mengatur arah pengurutan pada elemen di dalam style wadah_flex. pada percobaan kali ini saya mengguanakan 'row wrap'</p>
+        <p>Kesimpulan skenario 4 : Items di dalam class akan berada pada satu baris tanpa memikirkan ukuran.</p>
+        <p>Kesimpulan skenario 5 : Nilai row wrap digunakan untuk menempatkan elemen flex pada baris dengan memikirkan space yang tersedia.</p>
+        <p>Kesimpulan skenario 6 : justify-content digunakan pada saat ingin untuk mengatur letak elemen flex secara horizontal, pada percobaan kali ini saya menggunakan nilai 'center'</p>
+    </div>
+</body>
+</html>
